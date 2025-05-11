@@ -1,0 +1,198 @@
+/* Hero-блок для страницы Организация поминок */
+.memorial-org-hero {
+    min-height: 60vh; /* Уменьшаем высоту по сравнению с главной (100vh) */
+    margin-bottom: 0; /* Убираем отступ снизу */
+  }
+  
+  .memorial-org-hero__content {
+    padding-top: 100px; /* Учитываем шапку */
+    min-height: 60vh;
+  }
+  
+  .memorial-org-hero__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .memorial-org-hero__button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(191, 48, 77, 1);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .memorial-org-hero__button:hover {
+    background: rgba(160, 40, 64, 1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Секции услуги Организация поминок */
+  .memorial-org-section {
+    padding: 40px 0;
+    margin-bottom: 30px;
+  }
+  
+  .memorial-org-section__content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .memorial-org-section__content--reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .memorial-org-section__image {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .memorial-org-section__image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .memorial-org-section__text {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .memorial-org-section__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .memorial-org-section__description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .memorial-org-section__price {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(191, 48, 77, 1);
+    margin-bottom: 20px;
+  }
+  
+  .memorial-org-section__cta {
+    display: inline-block;
+    padding: 12px 25px;
+    background: rgba(191, 48, 77, 1);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .memorial-org-section__cta:hover {
+    background: rgba(160, 40, 64, 1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 1024px) {
+    .memorial-org-hero {
+      min-height: 50vh;
+    }
+  
+    .memorial-org-hero__content {
+      padding-top: 80px;
+      min-height: 50vh;
+    }
+  
+    .memorial-org-hero__button {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  
+    .memorial-org-section__content {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .memorial-org-section__content--reverse {
+      flex-direction: column;
+    }
+  
+    .memorial-org-section__image,
+    .memorial-org-section__text {
+      max-width: 100%;
+    }
+  
+    .memorial-org-section__title {
+      font-size: 28px;
+    }
+  
+    .memorial-org-section__description {
+      font-size: 14px;
+    }
+  
+    .memorial-org-section__price {
+      font-size: 18px;
+    }
+  
+    .memorial-org-section__cta {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .memorial-org-hero {
+      min-height: 40vh;
+    }
+  
+    .memorial-org-hero__content {
+      padding-top: 60px;
+      min-height: 40vh;
+    }
+  
+    .memorial-org-hero__buttons {
+      gap: 10px;
+      margin-top: 20px;
+    }
+  
+    .memorial-org-hero__button {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+  
+    .memorial-org-section {
+      padding: 20px 0;
+    }
+  
+    .memorial-org-section__title {
+      font-size: 24px;
+    }
+  
+    .memorial-org-section__description {
+      font-size: 14px;
+    }
+  
+    .memorial-org-section__price {
+      font-size: 16px;
+    }
+  
+    .memorial-org-section__cta {
+      padding: 8px 15px;
+      font-size: 12px;
+    }
+  }

@@ -1,0 +1,198 @@
+/* Hero-блок для страницы Груз 200 */
+.cargo-200-hero {
+    min-height: 60vh; /* Уменьшаем высоту по сравнению с главной (100vh) */
+    margin-bottom: 0; /* Убираем отступ снизу */
+  }
+  
+  .cargo-200-hero__content {
+    padding-top: 100px; /* Учитываем шапку */
+    min-height: 60vh;
+  }
+  
+  .cargo-200-hero__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .cargo-200-hero__button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(191, 48, 77, 1);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cargo-200-hero__button:hover {
+    background: rgba(160, 40, 64, 1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Секции услуги Груз 200 */
+  .cargo-200-section {
+    padding: 40px 0;
+    margin-bottom: 30px;
+  }
+  
+  .cargo-200-section__content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .cargo-200-section__content--reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .cargo-200-section__image {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .cargo-200-section__image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .cargo-200-section__text {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .cargo-200-section__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .cargo-200-section__description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .cargo-200-section__price {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(191, 48, 77, 1);
+    margin-bottom: 20px;
+  }
+  
+  .cargo-200-section__cta {
+    display: inline-block;
+    padding: 12px 25px;
+    background: rgba(191, 48, 77, 1);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .cargo-200-section__cta:hover {
+    background: rgba(160, 40, 64, 1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 1024px) {
+    .cargo-200-hero {
+      min-height: 50vh;
+    }
+  
+    .cargo-200-hero__content {
+      padding-top: 80px;
+      min-height: 50vh;
+    }
+  
+    .cargo-200-hero__button {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  
+    .cargo-200-section__content {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .cargo-200-section__content--reverse {
+      flex-direction: column;
+    }
+  
+    .cargo-200-section__image,
+    .cargo-200-section__text {
+      max-width: 100%;
+    }
+  
+    .cargo-200-section__title {
+      font-size: 28px;
+    }
+  
+    .cargo-200-section__description {
+      font-size: 14px;
+    }
+  
+    .cargo-200-section__price {
+      font-size: 18px;
+    }
+  
+    .cargo-200-section__cta {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cargo-200-hero {
+      min-height: 40vh;
+    }
+  
+    .cargo-200-hero__content {
+      padding-top: 60px;
+      min-height: 40vh;
+    }
+  
+    .cargo-200-hero__buttons {
+      gap: 10px;
+      margin-top: 20px;
+    }
+  
+    .cargo-200-hero__button {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+  
+    .cargo-200-section {
+      padding: 20px 0;
+    }
+  
+    .cargo-200-section__title {
+      font-size: 24px;
+    }
+  
+    .cargo-200-section__description {
+      font-size: 14px;
+    }
+  
+    .cargo-200-section__price {
+      font-size: 16px;
+    }
+  
+    .cargo-200-section__cta {
+      padding: 8px 15px;
+      font-size: 12px;
+    }
+  }

@@ -1,0 +1,104 @@
+.subsidy-redesign {
+  position: relative;
+  padding: 40px 0;
+  margin-top: 30px; /* Отступ сверху */
+  margin-bottom: 30px; /* Отступ снизу */
+}
+
+.subsidy-redesign__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(245, 245, 245, 0.9); /* Серый фон с небольшим затемнением */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Лёгкое затемнение через тень */
+  padding: 20px;
+  border-radius: 15px; /* Закругление для содержимого */
+}
+
+.subsidy-redesign__left {
+  max-width: 60%;
+}
+
+.subsidy-redesign__title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.subsidy-redesign__amount {
+  font-size: 36px;
+  font-weight: 700;
+  color: rgba(191, 48, 77, 1);
+  margin-bottom: 10px;
+}
+
+.subsidy-redesign__description {
+  font-size: 16px;
+  color: #666;
+}
+
+.subsidy-redesign__right {
+  text-align: right;
+}
+
+.subsidy-redesign__consultation {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.subsidy-redesign__phone {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.subsidy-redesign__phone:hover {
+  color: rgba(191, 48, 77, 1);
+}
+
+@media (max-width: 768px) {
+  .subsidy-redesign {
+    padding: 20px 0;
+  }
+
+  .subsidy-redesign__content {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .subsidy-redesign__left {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .subsidy-redesign__title {
+    font-size: 24px;
+  }
+
+  .subsidy-redesign__amount {
+    font-size: 28px;
+  }
+
+  .subsidy-redesign__description {
+    font-size: 14px;
+  }
+
+  .subsidy-redesign__consultation {
+    font-size: 14px;
+  }
+
+  .subsidy-redesign__phone {
+    font-size: 20px;
+  }
+
+  .subsidy-redesign__right {
+    text-align: center;
+  }
+}

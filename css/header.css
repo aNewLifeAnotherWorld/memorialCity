@@ -1,0 +1,420 @@
+.header {
+  background: rgba(0, 0, 0, 0.2) !important;
+  z-index: 1002;
+  transition: background 0.3s ease;
+  margin: 0;
+  padding: 0;
+}
+
+.header--scrolled {
+  background: rgba(255, 255, 255, 0.7) !important; /* Белый фон с прозрачностью 70% */
+  border-bottom: none; /* Убираем красную полосу */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Лёгкая тень вместо полосы */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  background: transparent !important;
+}
+
+.header__logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  line-height: 1;
+}
+
+.header--scrolled .header__logo {
+  color: #333; /* Чёрный цвет на белом фоне */
+}
+
+.header__logo:hover {
+  color: rgba(191, 48, 77, 1);
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  position: relative;
+  margin-right: 30px;
+}
+
+.nav__item--buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav__link {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0;
+  position: relative;
+  transition: color 0.3s ease;
+  line-height: 1;
+}
+
+.header--scrolled .nav__link {
+  color: #333; /* Чёрный цвет на белом фоне */
+}
+
+.nav__link:hover {
+  color: rgba(191, 48, 77, 1);
+}
+
+.nav__link:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(191, 48, 77, 1);
+}
+
+.nav__item--dropdown:hover .dropdown__menu {
+  display: block;
+}
+
+.nav__item--dropdown.active .dropdown__icon {
+  transform: rotate(180deg);
+}
+
+.dropdown__menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  list-style: none;
+  padding: 10px 0;
+  min-width: 200px;
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+.nav__item--dropdown.active .dropdown__menu {
+  display: block;
+}
+
+.dropdown__item {
+  position: relative;
+}
+
+.dropdown__link {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 20px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.dropdown__link:hover {
+  color: rgba(191, 48, 77, 1);
+}
+
+.dropdown__link:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  width: calc(100% - 40px);
+  height: 2px;
+  background: rgba(191, 48, 77, 1);
+}
+
+.dropdown__item--nested:hover .dropdown__submenu {
+  display: block;
+}
+
+.dropdown__item--nested.active .dropdown__icon {
+  transform: rotate(180deg);
+}
+
+.dropdown__submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  list-style: none;
+  padding: 10px 0;
+  min-width: 200px;
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+.dropdown__item--nested.active .dropdown__submenu {
+  display: block;
+}
+
+.dropdown__subitem {
+  position: relative;
+}
+
+.dropdown__sublink {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 20px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.dropdown__sublink:hover {
+  color: rgba(191, 48, 77, 1);
+}
+
+.dropdown__sublink:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  width: calc(100% - 40px);
+  height: 2px;
+  background: rgba(191, 48, 77, 1);
+}
+
+.dropdown__icon {
+  margin-left: 5px;
+  display: inline-block;
+  font-size: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  content: '▼'; /* Стандартная стрелка вниз */
+  font-family: Arial, sans-serif;
+}
+
+.nav__item--dropdown.active .dropdown__icon {
+  transform: rotate(180deg); /* Анимация поворота при открытии */
+}
+
+.burger__btn {
+  display: none;
+  background: none;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.burger__btn span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.header--scrolled .burger__btn span {
+  background: #333; /* Чёрный цвет на белом фоне */
+}
+
+.burger__btn.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger__btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger__btn.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.nav__button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+  color: #fff;
+  line-height: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень вместо обводки */
+}
+
+.nav__button.whatsapp {
+  background: #25D366;
+}
+
+.nav__button.whatsapp:hover {
+  opacity: 0.7;
+}
+
+.nav__button.telegram {
+  background: #0088cc;
+}
+
+.nav__button.telegram:hover {
+  opacity: 0.7;
+}
+
+.nav__button.phone {
+  background: rgba(191, 48, 77, 1);
+}
+
+.nav__button.phone:hover {
+  opacity: 0.7;
+}
+
+.header--scrolled .nav__button {
+  color: #333; /* Чёрный текст на белом фоне */
+  /* Убираем обводку, оставляем тень */
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header--scrolled .nav__button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.contact-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: opacity 0.3s ease;
+}
+
+.contact-btn.whatsapp {
+  background: #25D366;
+}
+
+.contact-btn.whatsapp:hover {
+  opacity: 0.7;
+}
+
+.contact-btn.telegram {
+  background: #0088cc;
+}
+
+.contact-btn.telegram:hover {
+  opacity: 0.7;
+}
+
+.contact-btn.phone {
+  background: #666;
+}
+
+.contact-btn.phone:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 1024px) {
+  .nav__list {
+    gap: 15px;
+  }
+
+  .nav__item {
+    margin-right: 0;
+  }
+
+  .nav__link {
+    font-size: 14px;
+  }
+
+  .nav__button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__nav {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9); /* Белый фон для мобильного меню */
+    padding: 20px;
+    flex-direction: column;
+    z-index: 1001;
+  }
+
+  .header__nav.active {
+    display: flex; /* Открытие меню при активации */
+  }
+
+  .burger__btn {
+    display: block;
+  }
+
+  .contact-buttons {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .contact-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav__button {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .nav__link, .header--scrolled .nav__link {
+    color: #333; /* Чёрный текст в мобильном меню */
+  }
+
+  .dropdown__menu, .dropdown__submenu {
+    position: static;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: none;
+  }
+
+  .dropdown__link, .dropdown__sublink {
+    color: #333;
+  }
+
+  .dropdown__link:hover, .dropdown__sublink:hover {
+    color: rgba(191, 48, 77, 1);
+    background: none;
+  }
+}

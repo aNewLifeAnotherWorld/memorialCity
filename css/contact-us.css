@@ -1,0 +1,124 @@
+.contact-us {
+  position: relative;
+  padding: 40px 0;
+  margin-top: 30px; /* Отступ сверху */
+  margin-bottom: 30px; /* Отступ снизу */
+}
+
+.contact-us__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/contact-us-bg.jpg') no-repeat center center/cover; /* Фоновая картинка с затемнением */
+  padding: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.contact-us__left {
+  flex: 1; /* Занимает левую половину */
+  max-width: 50%;
+}
+
+.contact-us__title {
+  font-size: 36px; /* Увеличенный заголовок */
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.contact-us__title .highlight {
+  font-weight: 700; /* Выделяем "вопросами" как bold */
+}
+
+.contact-us__text {
+  font-size: 20px; /* Увеличенный текст */
+  color: #fff;
+}
+
+.contact-us__right {
+  flex: 1; /* Занимает правую половину */
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Увеличенный отступ между кнопками */
+  justify-content: center; /* Центрируем кнопки по вертикали */
+  align-items: center; /* Центрируем кнопки по горизонтали */
+}
+
+.contact-us__button {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Центрируем текст внутри кнопки */
+  padding: 15px 40px; /* Увеличенные кнопки */
+  font-size: 22px; /* Увеличенный текст */
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease; /* Добавили transition для плавности */
+  width: 100%;
+  max-width: 300px; /* Ограничим ширину для эстетики */
+  background-size: cover; /* Фон растянется на всю кнопку */
+  background-position: center; /* Центрируем фон */
+  background-repeat: no-repeat; /* Не повторяем картинку */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень по умолчанию */
+}
+
+.contact-us__button:hover {
+  opacity: 0.9; /* Лёгкое затемнение при наведении */
+  transform: translateY(-3px); /* Выдвигаем кнопку вверх на 3px */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Увеличиваем тень при наведении */
+}
+
+.contact-us__button.whatsapp {
+  background-image: url('../images/whatsapp-bg.png'); /* Фон для WhatsApp */
+}
+
+.contact-us__button.telegram {
+  background-image: url('../images/telegram-bg.png'); /* Фон для Telegram */
+}
+
+.contact-us__button.phone {
+  background-image: url('../images/phone-bg.png'); /* Фон для Позвонить */
+}
+
+@media (max-width: 768px) {
+  .contact-us {
+    padding: 20px 0;
+  }
+
+  .contact-us__content {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .contact-us__left {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact-us__title {
+    font-size: 28px;
+  }
+
+  .contact-us__text {
+    font-size: 16px;
+  }
+
+  .contact-us__right {
+    max-width: 100%;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .contact-us__button {
+    font-size: 18px;
+    padding: 12px 30px;
+    max-width: 250px;
+  }
+}

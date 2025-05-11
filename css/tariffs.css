@@ -1,0 +1,148 @@
+.tariffs {
+  padding: 40px 0;
+  background: #fff;
+  margin-top: 30px; /* Отступ сверху */
+}
+
+.tariffs__title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.tariffs__subtitle {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.tariffs__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.tariff-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.tariff-card:hover {
+  transform: translateY(-5px);
+}
+
+.tariff-card__title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.tariff-card__price {
+  font-size: 28px;
+  font-weight: 700;
+  color: rgba(191, 48, 77, 1);
+  margin-bottom: 5px;
+}
+
+.tariff-card__price-subsidy {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.tariff-card__description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.tariff-card__toggle {
+  background: rgba(191, 48, 77, 1);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.tariff-card__toggle:hover {
+  background: rgba(160, 40, 64, 1);
+}
+
+.tariff-card__list {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.tariff-card__list.active {
+  display: block;
+}
+
+.tariff-card__item {
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tariff-card--economy {
+  border-top: 4px solid #ccc;
+}
+
+.tariff-card--standard {
+  border-top: 4px solid #999;
+}
+
+.tariff-card--premium {
+  border-top: 4px solid #666;
+}
+
+@media (max-width: 768px) {
+  .tariffs {
+    padding: 20px 0;
+  }
+
+  .tariffs__title {
+    font-size: 24px;
+  }
+
+  .tariffs__subtitle {
+    font-size: 14px;
+  }
+
+  .tariff-card__title {
+    font-size: 20px;
+  }
+
+  .tariff-card__price {
+    font-size: 24px;
+  }
+
+  .tariff-card__price-subsidy {
+    font-size: 14px;
+  }
+
+  .tariff-card__description {
+    font-size: 12px;
+  }
+
+  .tariff-card__toggle {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .tariff-card__item {
+    font-size: 12px;
+  }
+}
