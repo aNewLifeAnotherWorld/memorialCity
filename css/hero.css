@@ -116,6 +116,34 @@ body, html {
   background: rgba(160, 40, 64, 1);
 }
 
+.hero__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.hero__service-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: rgba(191, 48, 77, 1);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero__service-button:hover {
+  background: rgba(160, 40, 64, 1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 1024px) {
   .hero__content {
     padding-top: 120px;
@@ -131,6 +159,11 @@ body, html {
 
   .hero__cta {
     padding: 12px 25px;
+    font-size: 14px;
+  }
+
+  .hero__service-button {
+    padding: 8px 15px;
     font-size: 14px;
   }
 }
@@ -151,5 +184,16 @@ body, html {
   .hero__cta {
     padding: 10px 20px;
     font-size: 14px;
+  }
+
+  .hero__buttons {
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .hero__service-button {
+    padding: 6px 12px;
+    font-size: 12px;
   }
 }

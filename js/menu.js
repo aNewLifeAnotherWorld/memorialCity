@@ -12,45 +12,45 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <ul class="mobile-menu__list">
           <li class="mobile-menu__item mobile-menu__item--dropdown">
-            <a href="#services" class="mobile-menu__link">Услуги <span class="mobile-menu__toggle"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.5"/></svg></span></a>
+            <a href="index.html#services" class="mobile-menu__link">Услуги <span class="mobile-menu__toggle"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.5"/></svg></span></a>
             <ul class="mobile-menu__dropdown">
               <li class="mobile-menu__subitem mobile-menu__subitem--nested">
-                <a href="#funeral-org" class="mobile-menu__sublink">Организация похорон <span class="mobile-menu__toggle"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.5"/></svg></span></a>
+                <a href="funeral-org.html" class="mobile-menu__sublink">Организация похорон <span class="mobile-menu__toggle"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.5"/></svg></span></a>
                 <ul class="mobile-menu__subdropdown">
-                  <li><a href="#agent" class="mobile-menu__sublink">Вызов ритуального агента</a></li>
-                  <li><a href="#remote-order" class="mobile-menu__sublink">Оформить заказ удаленно</a></li>
-                  <li><a href="#morgue-transport" class="mobile-menu__sublink">Перевозка тела в морг</a></li>
-                  <li><a href="#ceremony-master" class="mobile-menu__sublink">Услуги церемониймейстера</a></li>
-                  <li><a href="#escort-team" class="mobile-menu__sublink">Услуги бригады сопровождения</a></li>
-                  <li><a href="#ritual-lift" class="mobile-menu__sublink">Заказ ритуального лифта (только МО)</a></li>
-                  <li><a href="#cremation" class="mobile-menu__sublink">Кремация</a></li>
-                  <li><a href="#cemetery-place" class="mobile-menu__sublink">Место на кладбище МО</a></li>
+                  <li><a href="funeral-org.html#agent" class="mobile-menu__sublink">Вызов ритуального агента</a></li>
+                  <li><a href="funeral-org.html#remote-order" class="mobile-menu__sublink">Оформить заказ удаленно</a></li>
+                  <li><a href="funeral-org.html#morgue-transport" class="mobile-menu__sublink">Перевозка тела в морг</a></li>
+                  <li><a href="funeral-org.html#ceremony-master" class="mobile-menu__sublink">Услуги церемониймейстера</a></li>
+                  <li><a href="funeral-org.html#escort-team" class="mobile-menu__sublink">Услуги бригады сопровождения</a></li>
+                  <li><a href="funeral-org.html#ritual-lift" class="mobile-menu__sublink">Заказ ритуального лифта (только МО)</a></li>
+                  <li><a href="funeral-org.html#cremation" class="mobile-menu__sublink">Кремация</a></li>
+                  <li><a href="funeral-org.html#cemetery-place" class="mobile-menu__sublink">Место на кладбище МО</a></li>
                 </ul>
               </li>
-              <li><a href="#cargo-200" class="mobile-menu__sublink">Груз 200</a></li>
-              <li><a href="#hearse-rental" class="mobile-menu__sublink">Аренда катафалка</a></li>
-              <li><a href="#vip-funeral" class="mobile-menu__sublink">VIP-похороны</a></li>
-              <li><a href="#memorial-org" class="mobile-menu__sublink">Организация поминок</a></li>
+              <li><a href="cargo-200.html" class="mobile-menu__sublink">Груз 200</a></li>
+              <li><a href="hearse-rental.html" class="mobile-menu__sublink">Аренда катафалка</a></li>
+              <li><a href="vip-funeral.html" class="mobile-menu__sublink">VIP-похороны</a></li>
+              <li><a href="memorial-org.html" class="mobile-menu__sublink">Организация поминок</a></li>
               <li class="mobile-menu__subitem mobile-menu__subitem--nested">
-                <a href="#additional" class="mobile-menu__sublink">Дополнительные услуги <span class="mobile-menu__toggle"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.5"/></svg></span></a>
+                <a href="additional-services.html" class="mobile-menu__sublink">Дополнительные услуги <span class="mobile-menu__toggle"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.5"/></svg></span></a>
                 <ul class="mobile-menu__subdropdown">
-                  <li><a href="#grave-improvement" class="mobile-menu__sublink">Благоустройство захоронения</a></li>
-                  <li><a href="#monuments" class="mobile-menu__sublink">Памятники</a></li>
-                  <li><a href="#fences" class="mobile-menu__sublink">Ограды</a></li>
+                  <li><a href="additional-services.html#grave-improvement" class="mobile-menu__sublink">Благоустройство захоронения</a></li>
+                  <li><a href="additional-services.html#monuments" class="mobile-menu__sublink">Памятники</a></li>
+                  <li><a href="additional-services.html#fences" class="mobile-menu__sublink">Ограды</a></li>
                 </ul>
               </li>
             </ul>
           </li>
           <li class="mobile-menu__item mobile-menu__item--dropdown">
-            <a href="#catalog" class="mobile-menu__link">Каталог <span class="mobile-menu__toggle"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.5"/></svg></span></a>
+            <a href="catalog.html" class="mobile-menu__link">Каталог <span class="mobile-menu__toggle"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.5"/></svg></span></a>
             <ul class="mobile-menu__dropdown">
-              <li><a href="#catalog-item1" class="mobile-menu__sublink">Категория 1</a></li>
-              <li><a href="#catalog-item2" class="mobile-menu__sublink">Категория 2</a></li>
+              <li><a href="catalog.html#catalog-item1" class="mobile-menu__sublink">Категория 1</a></li>
+              <li><a href="catalog.html#catalog-item2" class="mobile-menu__sublink">Категория 2</a></li>
             </ul>
           </li>
-          <li class="mobile-menu__item"><a href="#reviews" class="mobile-menu__link">Отзывы</a></li>
-          <li class="mobile-menu__item"><a href="#about" class="mobile-menu__link">О нас</a></li>
-          <li class="mobile-menu__item"><a href="#contacts" class="mobile-menu__link">Контакты</a></li>
+          <li class="mobile-menu__item"><a href="reviews.html" class="mobile-menu__link">Отзывы</a></li>
+          <li class="mobile-menu__item"><a href="about.html" class="mobile-menu__link">О нас</a></li>
+          <li class="mobile-menu__item"><a href="contacts.html" class="mobile-menu__link">Контакты</a></li>
         </ul>
         <div class="mobile-menu__buttons">
           <a href="https://wa.me/74951182288" class="mobile-menu__button whatsapp" target="_blank">WhatsApp</a>
@@ -67,7 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
       burgerBtn.addEventListener('click', () => {
         mobileMenu.classList.toggle('active');
         burgerBtn.classList.toggle('active');
-        console.log('Burger clicked');
       });
     }
   }
@@ -94,6 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
+    // Закрытие мобильного меню при выборе ссылки
     document.querySelectorAll('.mobile-menu__link, .mobile-menu__sublink').forEach(link => {
       link.addEventListener('click', (e) => {
         if (!link.querySelector('.mobile-menu__toggle')) {
@@ -105,50 +105,83 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function setupDesktopDropdowns() {
-    const dropdownToggles = document.querySelectorAll('.dropdown__icon');
-    if (dropdownToggles.length > 0) {
-      dropdownToggles.forEach(toggle => {
+    const dropdownItems = document.querySelectorAll('.nav__item--dropdown, .dropdown__item--nested');
+
+    dropdownItems.forEach(item => {
+      const toggle = item.querySelector('.dropdown__icon');
+      const link = item.querySelector('.nav__link, .dropdown__link');
+      const dropdown = item.querySelector('.dropdown__menu') || item.querySelector('.dropdown__submenu');
+
+      // Флаг для отслеживания, было ли подменю открыто кликом
+      let isClicked = false;
+
+      // Раскрытие при клике на стрелку
+      if (toggle) {
         toggle.addEventListener('click', (e) => {
           e.preventDefault();
           e.stopPropagation();
-          const parent = toggle.closest('.nav__item--dropdown') || toggle.closest('.dropdown__item--nested');
-          if (parent) {
-            const isActive = parent.classList.contains('active');
-            console.log('Toggling dropdown, parent:', parent, 'isActive:', isActive); // Отладка
+          const isActive = item.classList.contains('active');
 
-            // Закрываем другие подменю на том же уровне
-            parent.parentElement.querySelectorAll(`:scope > .${parent.classList[0]}.active`).forEach(item => {
-              if (item !== parent) {
-                item.classList.remove('active');
-                const itemDropdown = item.querySelector('.dropdown__menu, .dropdown__submenu');
-                if (itemDropdown) itemDropdown.classList.remove('active');
-              }
-            });
-
-            // Переключаем текущее подменю
-            parent.classList.toggle('active');
-            const dropdown = parent.querySelector('.dropdown__menu') || parent.querySelector('.dropdown__submenu');
-            if (dropdown) {
-              dropdown.classList.toggle('active');
-              console.log('Dropdown state:', dropdown.classList.contains('active')); // Отладка
+          // Закрываем другие подменю на том же уровне
+          item.parentElement.querySelectorAll(`:scope > .${item.classList[0]}.active`).forEach(sibling => {
+            if (sibling !== item) {
+              sibling.classList.remove('active');
+              const siblingDropdown = sibling.querySelector('.dropdown__menu, .dropdown__submenu');
+              if (siblingDropdown) siblingDropdown.classList.remove('active');
             }
-          }
-        });
-      });
-
-      // Закрытие подменю при клике вне
-      document.addEventListener('click', (e) => {
-        if (!e.target.closest('.nav__item--dropdown') && !e.target.closest('.dropdown__item--nested')) {
-          document.querySelectorAll('.nav__item--dropdown.active, .dropdown__item--nested.active').forEach(item => {
-            item.classList.remove('active');
-            const dropdown = item.querySelector('.dropdown__menu, .dropdown__submenu');
-            if (dropdown) dropdown.classList.remove('active');
           });
+
+          // Переключаем текущее подменю
+          item.classList.toggle('active');
+          if (dropdown) dropdown.classList.toggle('active');
+          isClicked = !isActive; // Обновляем флаг
+        });
+      }
+
+      // Раскрытие при наведении
+      item.addEventListener('mouseenter', () => {
+        if (!isClicked) { // Открываем только если не было клика
+          item.classList.add('active');
+          if (dropdown) dropdown.classList.add('active');
         }
       });
-    } else {
-      console.log('No dropdown toggles found'); // Отладка
-    }
+
+      // Закрытие при уходе курсора
+      item.addEventListener('mouseleave', () => {
+        if (!isClicked) { // Закрываем только если не было клика
+          item.classList.remove('active');
+          if (dropdown) dropdown.classList.remove('active');
+        }
+      });
+
+      // Закрытие подменю после выбора ссылки
+      if (link) {
+        link.addEventListener('click', (e) => {
+          const href = link.getAttribute('href');
+          if (href && href !== '#') {
+            window.location.href = href;
+            // Закрываем все подменю
+            dropdownItems.forEach(item => {
+              item.classList.remove('active');
+              const itemDropdown = item.querySelector('.dropdown__menu, .dropdown__submenu');
+              if (itemDropdown) itemDropdown.classList.remove('active');
+            });
+            isClicked = false; // Сбрасываем флаг
+          }
+        });
+      }
+    });
+
+    // Закрытие подменю при клике вне
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.nav__item--dropdown') && !e.target.closest('.dropdown__item--nested')) {
+        dropdownItems.forEach(item => {
+          item.classList.remove('active');
+          const dropdown = item.querySelector('.dropdown__menu, .dropdown__submenu');
+          if (dropdown) dropdown.classList.remove('active');
+        });
+      }
+    });
   }
 
   function handleResize() {
@@ -169,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   setupDesktopDropdowns();
 
-  // Проверка скролла (из index.html)
+  // Проверка скролла для шапки
   window.addEventListener('scroll', function() {
     const header = document.querySelector('.header');
     if (window.scrollY > 50) {
